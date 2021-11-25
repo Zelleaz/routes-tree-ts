@@ -1,0 +1,43 @@
+* {
+  box-sizing: border-box;
+}
+
+:root {
+  --facebook-bg: #3b5998;
+  --facebook-color: #fff;
+
+  --whats-app-bg: #43d854;
+  --whats-app-color: #fff;
+
+  --headerHeight: 70px;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: 'Ubuntu', 'sans-serif';
+}
+
+a {
+  text-decoration: none;
+}
+
+input, button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn {
+  padding: 10px 15px;
+  border: none;
+  font-weight: 600;
+  border-radius: 15px;
+}
+
+ol,ul {
+  list-style: none;
+  padding: 0;
+}

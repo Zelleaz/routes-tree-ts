@@ -1,0 +1,85 @@
+.room {
+  width: 100%;
+  height: 100vh;
+
+  &-body {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  &_fb {
+    .form, .child-wrapper, .header {
+      background-color: var(--facebook-bg);
+      color: var(--facebook-color);
+      transition: all ease 0.3s;
+    }
+
+    .btn {
+      background: var(--facebook-color);
+      color: var(--facebook-bg);
+      transition: all ease 0.3s;
+    }
+    .form-error {
+      color: crimson;
+    }
+  }
+
+  &_wa {
+    .form, .header, .child-wrapper {
+      background-color: var(--whats-app-bg);
+      color: var(--whats-app-color);
+      transition: all ease 0.3s;
+    }
+    
+    .form-error {
+      color: #000000;
+    }
+
+    .header {
+      background-color: var(--whats-app-bg);
+      color: var(--whats-app-color);
+      transition: all ease 0.3s;
+    }
+
+    .child {
+      background-color: var(--whats-app-color);
+      color: var(--whats-app-bg);
+    }
+  }
+}
+
+@media (max-width: 450px) {
+  .room {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .btn {
+      padding: 5px 10px;
+      font-size: 14px;
+    }
+
+    &-body {
+      padding-top: var(--headerHeight);
+      min-height: calc(100vh - var(--headerHeight));
+    }
+
+    .child {
+      &-wrapper {
+        justify-self: flex-end;
+        position: relative;
+        bottom: 0;
+      }
+    }
+  }
+
+  .header__title {
+    font-size: 18px;
+  }
+
+
+}
